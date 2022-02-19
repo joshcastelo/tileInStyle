@@ -30,6 +30,7 @@ body {
     text-align: center;
     transform: translateY(-100rem);
     z-index: 999;
+    position: fixed;
     transition: .5s;
 }
 .navbar__menuitems__show {
