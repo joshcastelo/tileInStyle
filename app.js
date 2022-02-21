@@ -13,12 +13,23 @@ navElements.toggleBtn.addEventListener('click', function(){
         navElements.toggleBtn.classList.add('fa-bars');
         navElements.toggleBtn.classList.remove('fa-xmark')
     }
-})
+});
 
 const introElements = {
     sliderImg: document.querySelector('.introduction__img'),
     introImages: [
-        'Images/intro background.jpeg',
-        'Images/intro background2.jpeg'
-    ]
-}
+        'Images/intro background2.jpeg',
+        'Images/intro background.jpeg'
+    ],
+};
+
+let index = 0;
+let numImages = introElements.introImages.length;
+
+let changeIntroImg = setInterval(function(){
+    index++;
+    if(index >= numImages){
+        index = 0;
+    }
+    introElements.sliderImg.src = introElements.introImages[index];
+}, 5000);
