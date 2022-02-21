@@ -1,3 +1,5 @@
+// Toggle burger menu
+
 const navElements = {
     toggleBtn: document.querySelector('.toggle'),
     navMenu: document.querySelector('.navbar__menuitems'),
@@ -15,6 +17,8 @@ navElements.toggleBtn.addEventListener('click', function(){
     }
 });
 
+// Introduction Elements
+
 const introElements = {
     sliderImg: document.querySelector('.introduction__img'),
     introImages: [
@@ -22,6 +26,8 @@ const introElements = {
         'Images/intro background.jpeg'
     ],
 };
+
+// Updates introduction image
 
 let index = 0;
 let numImages = introElements.introImages.length;

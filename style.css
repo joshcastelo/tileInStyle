@@ -2,8 +2,21 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     height: 100rem;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 /* Navbar */
 .heading__navbar {
@@ -18,8 +31,27 @@ body {
     justify-content: space-between;
     padding: 1rem;
 }
+.navbar__body {
+    display: none;
+}
 .navbar__head .navbar__head__img {
     width: 7rem;
+    animation-name: dropin;
+    animation-duration: .5s;
+}
+@keyframes dropin {
+    0% {
+        transform: translateY(-100rem);
+    }
+    20% {
+        transform: translateY(-50rem);
+    }
+    30% {
+        transform: translateY(-10rem);
+    }
+    60% {
+        transform: translateY(1rem);
+    }
 }
 .navbar__menuitems {
     background-color: black;
@@ -42,12 +74,45 @@ body {
     font-size: 3rem;
     line-height: 2;
 }
-/* Introduction Image */
+/* Introduction */
+.introduction {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
 .introduction__img {
     width: 100%;
-    margin-top: 5rem;
+}
+.introduction__title {
+    margin-top: -.3rem;
+    height: 25rem;
+    background-color: rgb(235, 235, 235);
+}
+.introduction__title h2 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 7rem;
+    font-family: 'Cabin';
 }
 /* FontAwesome */
 .fa-solid {
     font-size: 3rem;
+    cursor: pointer;
 }
+/* Bottom Footer */
+.bottomfooter {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 2;
+}
+.bottomfooter__head {
+    
+}
+.bottomfooter__title {
+    font-size: 2rem;
+}
+.bottomfooter__desc {
+    font-size: 1.5rem;
+}
+/* Minimum 560px */

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Cabin Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS File Link -->
@@ -12,7 +16,8 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <header class="heading">
+    <!-- Heading -->
+    <header class="heading" id="head">
         <nav class="heading__navbar">
             <div class="navbar__head">
                 <img class="navbar__head__img" src="Images/TilesInStyles Logo.png" alt="TileInStyle Logo">
@@ -23,14 +28,28 @@
         </nav>
         <div class="navbar__menuitems">
             <ul class="navbar__menuitems__list">
-                <li><a href="#">HOME</a></li>
+                <li><a href="#head">HOME</a></li>
                 <li><a href="#">GALLERY</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
     </header>
+    <!-- Introduction -->
     <section class="introduction">
-        <img class="introduction__img" src="Images/intro background2.jpeg" alt="Intro Image">
+        <div class="introduction__imgcontainer">
+            <img class="introduction__img" src="Images/intro background2.jpeg" alt="Intro Image">    
+        </div>
+        <div class="introduction__title">
+            <h2>BASED OUT IN ARIZONA</h2>
+        </div>
     </section>
+    <!-- Bottom Footer -->
+    <footer class="bottomfooter">
+        <div class="bottomfooter__head">
+        <h2 class="bottomfooter__title">Contact Us</h2>
+        <p class="bottomfooter__desc">tileinstyle@gmail.com</p>    
+        </div>
+        <p>&copy; 2022 TileInStyle</p>
+    </footer>
 </body>
 </html>
