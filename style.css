@@ -93,9 +93,8 @@ body {
 .introduction__img {
     width: 100%;
 }
-.introduction__title {
-    height: 25rem;
-    background-color: rgb(235, 235, 235);
+.introduction2__image img {
+    height: 26.21rem;
 }
 .introduction__title h2 {
     color: rgb(0, 0, 0);
@@ -134,9 +133,9 @@ body {
     text-align: center;
     line-height: 2;
 }
-.bottomfooter__head {
+/* .bottomfooter__head {
     
-}
+} */
 .bottomfooter__title {
     font-size: 2rem;
     color: white;
