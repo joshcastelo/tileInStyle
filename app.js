@@ -22,17 +22,16 @@ navElements.toggleBtn.addEventListener('click', function(){
 const introElements = {
     sliderImg: document.querySelector('.introduction__img'),
     introImages: [
-        'Images/intro background2.jpeg',
-        'Images/intro background.jpeg'
+        'Images/Tile Introduction 2.png',
+        'Images/Tile Introduction 1.png'
     ],
 };
 
 // Updates introduction image
-
 let index = 0;
-let numImages = introElements.introImages.length;
 
 let changeIntroImg = setInterval(function(){
+    let numImages = introElements.introImages.length;
     index++;
     if(index >= numImages){
         index = 0;
