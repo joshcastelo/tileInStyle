@@ -3,4 +3,6 @@
 
 
 ### Technology Used
-##### HTML CSS JAVASCRIPT
+* JavaScript
+* CSS
+* HTML
