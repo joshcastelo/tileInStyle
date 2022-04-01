@@ -1,9 +1,15 @@
 // Toggle burger menu
-
 const navElements = {
     toggleBtn: document.querySelector('.toggle'),
     navMenu: document.querySelector('.navbar__menuitems'),
+    navLinks: document.querySelectorAll('.navbar__menuitems__link')
 };
+
+navElements.navLinks.forEach(link => link.addEventListener('click', function(){
+    navElements.navMenu.classList.remove('navbar__menuitems__show');
+    navElements.toggleBtn.classList.add('fa-bars');
+    navElements.toggleBtn.classList.remove('fa-xmark')
+}))
 
 navElements.toggleBtn.addEventListener('click', function(){
     if(!navElements.navMenu.classList.contains('navbar__menuitems__show')){
@@ -17,24 +23,18 @@ navElements.toggleBtn.addEventListener('click', function(){
     }
 });
 
-// Introduction Elements
+const images = [
+    'Images/Tile Introduction 2.png',
+    'Images/Introduction 3.png'
+];
 
-const introElements = {
-    sliderImg: document.querySelector('.introduction__img'),
-    introImages: [
-        'Images/Tile Introduction 2.png',
-        'Images/Tile Introduction 1.png'
-    ],
-};
+let indexNum = 0;
 
-// Updates introduction image
-let index = 0;
-
-let changeIntroImg = setInterval(function(){
-    let numImages = introElements.introImages.length;
-    index++;
-    if(index >= numImages){
-        index = 0;
+let changeIntroductionImg = setInterval(function(){
+    indexNum += 1;
+    if(indexNum > 1){
+        indexNum = 0;
     }
-    introElements.sliderImg.src = introElements.introImages[index];
+    let imageElem = document.querySelector('.introduction__imgcontainer__img');
+    imageElem.src = images[indexNum]
 }, 5000);
