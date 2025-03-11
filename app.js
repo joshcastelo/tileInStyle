@@ -11,6 +11,8 @@ navElements.navLinks.forEach(link => link.addEventListener('click', function(){
     navElements.toggleBtn.classList.remove('fa-xmark')
 }))
 
+// a new note
+
 navElements.toggleBtn.addEventListener('click', function(){
     if(!navElements.navMenu.classList.contains('navbar__menuitems__show')){
         navElements.navMenu.classList.add('navbar__menuitems__show');
