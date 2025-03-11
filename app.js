@@ -11,8 +11,6 @@ navElements.navLinks.forEach(link => link.addEventListener('click', function(){
     navElements.toggleBtn.classList.remove('fa-xmark')
 }))
 
-// a new note
-
 navElements.toggleBtn.addEventListener('click', function(){
     if(!navElements.navMenu.classList.contains('navbar__menuitems__show')){
         navElements.navMenu.classList.add('navbar__menuitems__show');
@@ -32,11 +30,11 @@ const images = [
 
 let indexNum = 0;
 
-let changeIntroductionImg = setInterval(function(){
-    indexNum += 1;
-    if(indexNum > 1){
-        indexNum = 0;
-    }
-    let imageElem = document.querySelector('.introduction__imgcontainer__img');
-    imageElem.src = images[indexNum]
-}, 5000);
+// let changeIntroductionImg = setInterval(function(){
+//     indexNum += 1;
+//     if(indexNum > 1){
+//         indexNum = 0;
+//     }
+//     let imageElem = document.querySelector('.introduction__imgcontainer__img');
+//     imageElem.src = images[indexNum]
+// }, 5000);
